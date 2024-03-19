@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF Friendship Test</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        /* You can customize further using Tailwind utilities or extend it with your own CSS */
+        /* Dark Mode */
+        body.dark {
+            background-color: #181418;
+            color: #f9fafb;
+        }
+
+        body.dark .bg-white {
+            background-color: #550e39;
+            color: #081625;
+        }
+
+        body.dark .bg-gray-100 {
+            background-color: #431133;
+            color: #3d6e9f;
+        }
+
+        body.dark .text-gray-800 {
+            color: #440d2e;
+        }
+
+        body.dark .border-gray-300 {
+            border-color: #32072b;
+        }
+
+        body.dark .hover\:bg-gray-200:hover {
+            background-color: #320930;
+        }
+
+        body.dark .text-blue-500 {
+            color: #7fce24;
+        }
+
+        body.dark .hover\:bg-blue-600:hover {
+            background-color: #58134e;
+        }
+
+        body.dark .bg-blue-500 {
+            background-color: #9c2d9a;
+        }
+
+        body.dark .hover\:bg-blue-600:focus {
+            background-color: #683737;
+        }
+
+        body.dark .focus\:border-blue-500:focus {
+            border-color: #530d3e;
+            box-shadow: 0 0 0 3px rgba(224, 105, 212, 0.5);
+        }
+
+        body.dark .text-white {
+            color: #2e071f;
+        }
+
+        body.dark .bg-purple-600 {
+            background-color: #09bda5;
+        }
+
+        body.dark .text-purple-600 {
+            color: #7c3aed;
+        }
+
+        body.dark .hover\:bg-purple-600:hover {
+            background-color: #4418a3;
+        }
+
+        body.dark .text-gray-800 {
+            color: #380729;
+        }
+
+        body.dark .bg-gray-600 {
+            background-color: #460e48;
+        }
+
+        body.dark .text-gray-600 {
+            color: #3f0b36;
+        }
+
+        body.dark .hover\:bg-gray-600:hover {
+            background-color: #b6de13;
+        }
+
+        body.dark .text-gray-500 {
+            color: #743435;
+        }
+
+        body.dark .bg-gray-700 {
+            background-color: #d8cb15;
+        }
+
+        body.dark .text-gray-400 {
+            color: #192535;
+        }
+
+        body.dark .hover\:bg-gray-700:hover {
+            background-color: #9bcb29;
+        }
+
+        body.dark .text-gray-300 {
+            color: #cbd5e0;
+        }
+
+        body.dark .bg-white {
+            background-color: #111827;
+            color: #6d1e25;
+        }
+
+        body.dark .text-gray-700 {
+            color: #491417;
+        }
+
+        body.dark .hover\:bg-white:hover {
+            background-color: #d8d51a;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+
+    <!-- Navigation Bar -->
+    <!-- Using Tailwind CSS -->
+    <nav class="bg-purple-900 py-4 px-6 flex justify-between items-center">
+        <!-- Left side - Hamburger Icon -->
+        <div class="flex items-center">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <!-- Website Logo (You can replace 'logo.svg' with your actual logo file) -->
+            
+        </div>
+
+        <!-- Middle - Friendship Test -->
+        <!-- Middle - Friendship Test -->
+<h1 class="text-orange font-bold font-serif">Friendship Test 2024</h1>
+
+
+        <!-- Right side - Language Dropdown -->
+        <div class="relative">
+            <button id="lang-toggle" class="text-white focus:outline-none">
+                Select a Language
+            </button>
+            <!-- Dropdown Content -->
+            <div id="lang-dropdown"
+                class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg z-10 hidden">
+                <!-- Example Dropdown Content (Replace with actual languages) -->
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">English</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Spanish</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">French</a>
+                <!-- Add more language options as needed -->
+            </div>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+        <button id="dark-mode-toggle" class="text-white focus:outline-none ml-4">
+            Dark Mode
+        </button>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <!-- Using Tailwind CSS -->
+    <div id="mobile-menu" class=" bg-purple-600 py-2 px-4 mt-2 mb-4 rounded-lg shadow-lg hidden">
+        <a href="#" class="block text-white py-1">Home</a>
+        <a href="#" class="block text-white py-1">About Us</a>
+        <a href="#" class="block text-white py-1">Social</a>
+        <a href="#" class="block text-white py-1">Contact Us</a>
+    </div>
+
+    <!-- Content Section -->
+    <!-- Using Bootstrap for the layout -->
+    <div class="container mx-auto py-8">
+
+        <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-8">
+
+            <h1 class="text-3xl font-semibold text-center mb-6 text-pink-600">🤝🏻<b><u> BFF Friendship Test </u></b>🤩</h1>
+
+            <p class="text-center mb-6"><span class="text-yellow-500"><b>Instructions:</b></span><br>
+                <span class="text-orange-500">🌸</span> <b>Enter your name.</b><br>
+                <span class="text-red-900">🌸</span> <b>Answer any 10 Questions about yourself.</b><br>
+                <span class="text-green-500">🌸</span> <b>Your quiz-link will be ready.</b><br>
+                <span class="text-green-500">🌸</span> <b>Share your quiz-link with your friends.</b><br>
+                <span class="text-green-500">🌸</span> <b>Your friends will try to guess the right answers.</b><br>
+                <span class="text-green-500">🌸</span> <b>Check the score of your friends at your Friendboard.</b></p>
+
+            <div class="mb-6 flex justify-center">
+                <div class="w-64 bg-pink-200 rounded-lg p-4">
+                    <label for="name" class="block text-sm font-medium mb-2">Enter Your Name:</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full border-purple-600 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+                        placeholder="Enter your name (eg. jay)">
+                </div>
+            </div>
+
+            <button class="w-full bg-blue-500 text-white font-semibold rounded-lg py-2 focus:outline-none hover:bg-blue-600 transition duration-200">Start</button>
+
+        </div>
+
+        <p class="text-center text-sm mt-4">Already have an account? <a href="#" class="text-blue-500">Log in here</a>.</p>
+
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Toggle language dropdown
+        document.getElementById('lang-toggle').addEventListener('click', function () {
+            document.getElementById('lang-dropdown').classList.toggle('hidden');
+        });
+
+        // Toggle dark mode
+        document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark');
+            var darkModeToggle = document.getElementById('dark-mode-toggle');
+            if (document.body.classList.contains('dark')) {
+                darkModeToggle.textContent = "Dark Mode: Enabled";
+            } else {
+                darkModeToggle.textContent = "Dark Mode: Disabled";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+
